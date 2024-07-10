@@ -15,7 +15,6 @@ export default async function UsersTable({
     return (
         <div>
             <table className="table">
-                {/* head */}
                 <thead>
                     <tr>
                         <th>
@@ -56,7 +55,6 @@ export default async function UsersTable({
                                 </div>
                             </td>
                             <td>
-                                {/* You can customize and add job details if available */}
                                 {user.paymentDetails.accountType}
                                 <br />
                                 <span className="badge badge-ghost badge-sm">Account: {user.paymentDetails.accountName}</span>
@@ -71,7 +69,6 @@ export default async function UsersTable({
                         </tr>
                     ))}
                 </tbody>
-                {/* foot */}
                 <tfoot>
                     <tr>
                         <th></th>
