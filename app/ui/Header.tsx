@@ -7,8 +7,7 @@ export default function Header() {
                 <h1 className="text-xl font-bold">User Management System</h1>
                 <nav>
                     <a href="/" className="mx-2">Home</a>
-                    <a href="/about" className="mx-2">About</a>
-                    <a href="/contact" className="mx-2">Contact</a>
+                    <a href="/users" className="mx-2">Users List</a>
                 </nav>
             </div>
         </header>
