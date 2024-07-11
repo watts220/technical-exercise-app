@@ -2,13 +2,12 @@
 'use client';
 
 import React, { useState, FC } from "react";
+import Crypto, { createHash } from 'crypto';
 import { User } from "@/types/User";
 import styles from "@/app/ui/users/UserDetails/style.module.css";
 
 const hashData = (str:string) => {
-    return str.split('').reduce((acc, char) => {
-        return acc + char.charCodeAt(0).toString(16);
-    }, '0x');
+    return createHash('sha256').update(str).digest('hex').substring(0, 20);
 };
 
 interface UserDetailsProps {
