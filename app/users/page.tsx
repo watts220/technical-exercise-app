@@ -12,7 +12,6 @@ export default async function UsersPage({
     order?: 'asc' | 'desc';
   };
 }) {
-  const query = searchParams?.query || '';
   const currentPage = Number(searchParams?.page) || 1;
   const limit = Number(searchParams?.limit) || 15;
   const orderBy = searchParams?.orderBy || ''; 
